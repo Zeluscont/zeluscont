@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelus Contabilidade Inteligente</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span class="highlight">ZELUS</span> Contabilidade Inteligente</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" class="active">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="showcase">
+        <div class="container">
+            <div class="showcase-content">
+                <h1>Contabilidade Inteligente para o seu Negócio</h1>
+                <p>Soluções contábeis personalizadas para empresas de todos os portes</p>
+                <a href="#contato" class="btn-primary">Fale Conosco</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <!-- Primeira linha com Contabilidade Fiscal e Contabilidade Gerencial lado a lado -->
+                <div class="service-card" id="contabilidade-fiscal">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Contabilidade Fiscal</h3>
+                    <p>Gestão completa das obrigações fiscais da sua empresa, garantindo conformidade com a legislação.</p>
+                </div>
+                <div class="service-card" id="contabilidade-gerencial">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Contabilidade Gerencial</h3>
+                    <p>Relatórios e análises contábeis focados na gestão do negócio, apoiando a tomada de decisões estratégicas.</p>
+                </div>
+                
+                <!-- Demais serviços -->
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Consultoria Financeira</h3>
+                    <p>Análise detalhada dos seus números para tomadas de decisão estratégicas e crescimento sustentável.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>Departamento Pessoal</h3>
+                    <p>Gestão completa da folha de pagamento, férias, 13º salário e todas as obrigações trabalhistas.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Planejamento Tributário</h3>
+                    <p>Estratégias legais para redução da carga tributária e otimização dos recursos da sua empresa.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-coins"></i>
+                    <h3>BPO Financeiro</h3>
+                    <p>Terceirização de processos financeiros com foco em eficiência, redução de custos e melhoria da gestão.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Planejamento para a Reforma Tributária</h3>
+                    <p>Preparação estratégica para as mudanças da reforma tributária, minimizando impactos e maximizando oportunidades.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Holding e Sucessões</h3>
+                    <p>Estruturação de holdings familiares e empresariais, planejamento sucessório e proteção patrimonial.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-medkit"></i>
+                    <h3>Medicina e Segurança do Trabalho</h3>
+                    <p>Assessoria completa em normas regulamentadoras, programas de saúde ocupacional e gestão de riscos laborais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre a Zelus</h2>
+                    <p>A Zelus Contabilidade Inteligente nasceu com o propósito de transformar a relação entre empresas e contabilidade, trazendo soluções modernas e eficientes para o mercado.</p>
+                    <p>Com mais de 10 anos de experiência, nossa equipe de profissionais qualificados está pronta para oferecer o melhor atendimento e as soluções mais adequadas para o seu negócio.</p>
+                    <p>Nosso diferencial está na combinação de conhecimento técnico, tecnologia avançada e atendimento personalizado.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img/accounting-team.jpg" alt="Equipe Zelus Contabilidade">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias" class="news">
+        <div class="container">
+            <h2 class="section-title">Notícias Contábeis</h2>
+            <div class="news-container">
+                <div class="news-filter">
+                    <h3>Filtrar por:</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Todas</button>
+                        <button class="filter-btn" data-filter="fiscal">Fiscal</button>
+                        <button class="filter-btn" data-filter="tributario">Tributário</button>
+                        <button class="filter-btn" data-filter="trabalhista">Trabalhista</button>
+                    </div>
+                </div>
+                
+                <div class="news-grid">
+                    <!-- As notícias serão carregadas dinamicamente via JavaScript -->
+                    <div class="news-loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Carregando notícias...</p>
+                    </div>
+                </div>
+                
+                <div class="news-pagination">
+                    <button id="load-more-news" class="btn-primary">Carregar mais notícias</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que dizem nossos clientes</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"A Zelus transformou a gestão contábil da minha empresa. Agora tenho mais tempo para focar no crescimento do negócio."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Carlos Silva</h4>
+                        <p>Empresário</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"Profissionais extremamente competentes e atenciosos. Recomendo a todos os empreendedores."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Ana Oliveira</h4>
+                        <p>Diretora Financeira</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"O planejamento tributário da Zelus nos ajudou a economizar significativamente nos impostos de forma totalmente legal."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Roberto Mendes</h4>
+                        <p>CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <span class="prev-testimonial"><i class="fas fa-chevron-left"></i></span>
+                <span class="next-testimonial"><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:zelus@zeluscontabilidade.com">zelus@zeluscontabilidade.com</a></p>
+                    </div>
+                    
+                    <div class="office-locations">
+                        <div class="office">
+                            <h4>Escritório Brasília</h4>
+                            <div class="info-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <p><a href="https://wa.me/556121931274" target="_blank">(61) 2193-1274</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="office">
+                            <h4>Escritório São Paulo</h4>
+                            <div class="info-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <p><a href="https://wa.me/551141600200" target="_blank">(11) 4160-0200</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="office">
+                            <h4>Escritório Goiânia</h4>
+                            <div class="info-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <p><a href="https://wa.me/5562993963183" target="_blank">(62) 99396-3183</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="office">
+                            <h4>Escritório Inhumas</h4>
+                            <div class="info-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <p><a href="https://wa.me/5562984316138" target="_blank">(62) 98431-6138</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Zelus Contabilidade Inteligente. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
